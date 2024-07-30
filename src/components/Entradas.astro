@@ -5,15 +5,14 @@ interface Props {
     autor: string;
     descripcion: string;
     href: string;
-    image?:string;
 }
 
-const { image, titulo, fecha, autor, descripcion, href, } = Astro.props;
+const { titulo, fecha, autor, descripcion, href } = Astro.props;
 ---
 
-<a href={href}>
-    <hr />
-    <div class="grid-1">
+
+    <a href={href}>
+        <!-- <div class="grid-1">-->
         <div class="entrada">
             <h2 class="titulo">
                 {titulo}
@@ -28,45 +27,58 @@ const { image, titulo, fecha, autor, descripcion, href, } = Astro.props;
                 {descripcion}
             </p>
         </div>
-        <div class="imagen">
-            {image}
-        </div>
-    </div>
-    <hr />
-</a>
+    </a>
 
 <style>
-    body{
+    body {
         font-family: montserrat;
     }
+  
+
     a {
         text-decoration: none;
     }
     h2 {
-        color: whitesmoke;
+        color: rgb(0, 35, 90);
+        font-weight: 800;
+    }
+    body.dark h2 {
+        color: rgb(53, 134, 255);
+    }
+    body.dark p {
+        color: rgb(214, 214, 214);
     }
     p {
-        color: whitesmoke;
+        color: rgb(0, 6, 85);
+        font-weight: 500;
     }
+
     .fecha {
         font-size: 1rem;
-        color: rgb(134, 134, 134);
+        color: rgb(0, 7, 104);
+    }
+    body.dark .fecha {
+        color: rgb(180, 180, 180);
     }
     .autor {
+        position: relative;
+        top: -15px;
         font-size: 0.8rem;
-        color: rgb(134, 134, 134);
-         
-    } 
-    .desc{
+        color: rgb(0, 7, 104);
+    }
+    body.dark .autor {
+        color: rgb(180, 180, 180);
+    }
+    .desc {
         font-size: 1rem;
     }
-    .grid-1 {
+    /*.grid-1 {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         grid-column-gap: 15px;
         grid-row-gap: 0px;
-    }
+    }*/
     /*.imagen {
         width: 350px;
         height: 350px;
@@ -76,7 +88,7 @@ const { image, titulo, fecha, autor, descripcion, href, } = Astro.props;
         background-image: url("https://w.wallhaven.cc/full/2y/wallhaven-2yx5og.jpg");
         grid-area: 1 / 3 / 2 / 4;
     }*/
-    .entrada {
+    /*.entrada {
         grid-area: 1 / 1 / 2 / 3;
-    }
+    }*/
 </style>

@@ -1,0 +1,107 @@
+<html lang="es">
+    <body>
+        <button class="switch" id="switch">
+            <div class="sol"></div>
+            <div class="luna"></div>
+        </button>
+    </body>
+    <style>
+        .sol {
+            width: 24px;
+            height: 24px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(/src/components/img/sun.png);
+        }
+        .luna {
+            margin-left: 5px;
+            filter: invert(95%);
+            width: 24px;
+            height: 24px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-image: url(/src/components/img/moon.png);
+        }
+
+        .switch {
+            z-index: 999;
+            position: absolute;
+            top: 25px;
+            left: 5%;
+            /*background: rgb(26, 8, 60);*/
+            background: rgb(8, 0, 47);
+            border: none;
+            border-radius: 1000px;
+            display: flex;
+            cursor: pointer;
+            width: 55px;
+            height: 25px;
+            position: fixed;
+        }
+        .switch::after {
+            z-index: 999;
+            content: "";
+            display: block;
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            /*background: rgba(251, 251, 251, 0.547);*/
+            /* background: rgba(25, 194, 255, 0.547);*/
+            /*background-color: rgb(0, 23, 127);*/
+            background-color: rgb(0, 195, 255);
+            top: 0;
+            left: 0;
+            right: unset;
+            border-radius: 1000px;
+            transition: 0.3s ease all;
+            /* box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);*/
+            box-shadow: 0px 0px 2px 2px rgba(43, 16, 181, 0.2);
+        }
+        .switch.active {
+            z-index: 999;
+            /*background-color: orange;*/
+            background-color: whitesmoke;
+        }
+        .switch.active::after {
+            z-index: 999;
+            right: 0;
+            left: unset;
+            /*background-color: rgb(0, 127, 224);*/
+            background-color: rgb(0, 10, 118);
+        }
+        * {
+            background-color: none;
+        }
+        body.dark {
+            /*background-color:rgb(0, 1, 45);*/
+            background-color: rgb(9, 0, 60);
+        }
+        @media (max-width: 750px) {
+            .switch::after {
+                width: 20px;
+                height: 20px;
+                border-radius: 100px;
+                transition: 0.3s ease all;
+            }
+            .switch {
+                left: 84%;
+                width: 40px;
+                height: 20px;
+            }
+            .sol {
+                background-image: none;
+            }
+            .luna{
+                background-image: none;
+            }
+        }
+
+        /**.dark{
+            background-color:darkgrey;
+        }
+        */
+    </style>
+    <script src="/src/components/boton.js"></script>
+</html>

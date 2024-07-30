@@ -1,0 +1,268 @@
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="logo"></div>
+                <ul class="enlaces">
+                    <li><a href="/Nosotros">Inicio</a></li>
+                    <li><a href="/Blog">Blog</a></li>
+                    <li><a href="/Nosotros">Nosotros</a></li>
+                    <li><a href="/Design">Diseño</a></li>
+                    <li><a href="/Ventadeequipo">Venta de equipo</a></li>
+                    <li><a href="/Patrocinios">Patrocinios</a></li>
+                    <li><a href="/Contacto">Contacto</a></li>
+                </ul>
+                <div class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="/Blog">Blog</a></li>
+                <li><a href="/nosotros">Nosotros</a></li>
+                <li><a href="/design">Diseño</a></li>
+                <li><a href="/venta">Venta de equipo</a></li>
+                <li><a href="/patrocinios">Patrocinios</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </div>
+        </header>
+    </body>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: montserrat;
+        }
+
+        .logo-2 {
+            text-align: center;
+            width: 100%;
+            height: 10%;
+        }
+        .logo-2 img {
+            width: 410px;
+            height: 205px;
+            transform: scale(1.5);
+        }
+
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 65px;
+            /*background: black;*/
+            background: none;
+        }
+
+        li {
+            list-style: none;
+            font-weight: 800;
+            font-size: 2em;
+            /*background: black;*/
+            background: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            /*background: black;*/
+            background: none;
+        }
+
+        a:hover {
+            color: rgb(171, 5, 5);
+        }
+        /*-------------  NUEVO CODIGO ------------------------------- */
+        .navbar {
+            position: absolute;
+            top: 100px;
+            left: 87%;
+            /*background: red;*/
+            line-height: 0px;
+            background: none;
+        }
+        .navbar .toggle-btn {
+            /*color: rgb(135, 3, 3); /* color barra colores*/
+            /*color: rgb(0, 0, 0);*/
+            color: rgb(231, 231, 231);
+            font-size: 1.7em;
+            padding: 0em;
+            display: visible;
+        }
+        .dropdown-menu {
+            display: none !important;
+            /*background: rgba(74, 188, 190, 0.1);*/
+            background-color: rgb(249, 249, 249);
+            position: absolute;
+            right: 4rem;
+            top: 170px;
+            height: 0px;
+            width: 300px;
+            line-height: 2em;
+            border-radius: 10px;
+
+            z-index: 999;
+            /*padding: 3.5em;*/
+
+            overflow: hidden;
+            transition: height 0.2s cubic-bezier(0.175, 0.882, 0.32, 1.275);
+        }
+
+        .dropdown-menu li {
+            padding: 0.5em;
+            text-align: center;
+            font-family: montserrat;
+            font-weight: 800;
+        }
+        .dropdown-menu a {
+            color: darkblue;
+        }
+        .dropdown-menu a:hover {
+            color: rgb(127, 223, 255);
+        }
+
+        .dropdown-menu.open {
+            display: block !important;
+            height: 420px;
+            z-index: 999;
+        }
+        .navbar .enlaces {
+            display: none; /* Si quiero el texto de navegacion horizontal en la navbar */
+        }
+        .navbar .toggle-btn {
+            display: block;
+            cursor: pointer;
+        }
+        @media (max-width: 730px) {
+            .logo-2 img {
+                width: 410px;
+                height: 205px;
+                transform: scale(1.3);
+            }
+        }
+        @media (max-width: 860px) {
+            li {
+                list-style: none;
+                font-weight: 800;
+                font-size: 1.8em;
+            }
+            ul {
+                gap: 35px;
+            }
+        }
+        @media (max-width: 660px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            a {
+                color: black;
+            }
+            .navbar .enlaces {
+                display: none;
+            }
+
+            .navbar .toggle-btn {
+                display: block;
+                cursor: pointer;
+            }
+
+            .dropdown-menu {
+                display: block;
+            }
+            .navbar {
+                position: absolute;
+                top: 100px;
+                left: 85%;
+                /*background: red;*/
+                line-height: 0px;
+                background: none;
+            }
+            .logo-2 img {
+                width: 410px;
+                height: 205px;
+                transform: scale(1);
+            }
+        }
+        @media (max-width: 645px) {
+            .logo-2 img {
+                position: relative;
+                left: -5%;
+            }
+            .dropdown-menu {
+                top: 150px;
+            }
+        }
+        @media (max-width: 475px) {
+            .logo-2 {
+                text-align: center;
+            }
+            .logo-2 img {
+                position: relative;
+                /*left: -15%;*/
+                width: 410px;
+                height: 205px;
+                transform: scale(0.6);
+            }
+            li {
+                list-style: none;
+                font-weight: 600;
+                font-size: 1.5em;
+            }
+            .dropdown-menu {
+                position: absolute;
+                right: 1.5rem;
+                top: 150px;
+            }
+        }
+        @media (max-width: 360px) {
+            .logo-2 img {
+                position: relative;
+                left: -15%;
+            }
+        }
+    </style>
+<script>
+    const toggleBtn = document.querySelector(".toggle-btn") as HTMLElement | null;
+    const toggleBtnIcon = document.querySelector(".toggle-btn i") as HTMLElement | null;
+    const dropDown = document.querySelector(".dropdown-menu") as HTMLElement | null;
+
+    if (toggleBtn && dropDown && toggleBtnIcon) {
+        toggleBtn.onclick = function () {
+            dropDown.classList.toggle("open");
+            const isOpen = dropDown.classList.contains("open");
+
+            if (isOpen) {
+                toggleBtnIcon.classList.remove("fa-bars");
+                toggleBtnIcon.classList.add("fa-xmark");
+            } else {
+                toggleBtnIcon.classList.remove("fa-xmark");
+                toggleBtnIcon.classList.add("fa-bars");
+            }
+        };
+    } else {
+        console.error("Uno o más elementos no se encontraron en el DOM.");
+    }
+</script>
+
+</html>

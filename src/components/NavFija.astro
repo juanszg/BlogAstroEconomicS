@@ -1,0 +1,103 @@
+<!--*********** Barra navegacion fija ********************************-->
+<html lang="es">
+    <div class="logo-economic">
+        <img src="/src/img/GIF-3.gif" width="250" height="250" />
+        <!-- <img src="" alt="bannerlogo-ECONOMICSALES" />-->
+        <nav id="menu">
+            <a href="index.html"><span id="company-name" class="company-name">ECONOMIC SALES</span></a>
+            <ul>
+                <!-- <li><a href="index.html"> INICIO</a></li>-->
+                <li><a href="/BLOG/blog.html">BLOG</a></li>
+                <li><a href="/nosotros">NOSOTROS</a></li>
+                <li><a href="/design">DISEÑO</a></li>
+                <li><a href="/venta">VENTA DE EQUIPO</a></li>
+                <li><a href="/patrocinios">PATROCINIOS</a></li>
+                <li><a href="/contacto"> CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+    <style>
+        * {
+            font-family: montserrat;
+        }
+        #menu {
+            color: aliceblue;
+            flex-flow: row;
+            /*margin: 10%; */
+        }
+        #menu ul li a:hover {
+            color: #2a98f9;
+        }
+        #menu ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            place-items: center;
+            width: 80%;
+            height: 100%;
+            font-weight: bold;
+            list-style: none;
+            justify-content: end;
+        }
+        #menu ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            margin-right: 35px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .logo-economic {
+            background-color: #190eaf;
+        }
+        .logo-economic img {
+            width: 75%;
+            height: 75%;
+            margin-left: 10%;
+            margin-top: 80px;
+            padding: 2em;
+        }
+        .logo-economic nav {
+            z-index: 998;
+            position: fixed;
+            top: 0px;
+            padding-top: 0em;
+            background-color: #190eaf;
+            opacity: 0.9;
+            width: 100%;
+        }
+        .logo-economic ul {
+            margin-left: 17%;
+            margin-top: 0px;
+        }
+        .company-name {
+            opacity: 0;
+            transition: opacity 0.5s;
+            position: relative;
+            left: 13%;
+            top: 25px;
+            color:whitesmoke;
+           
+
+        }
+       a{
+             text-decoration: none;
+        }
+        span {
+            font-family: montserrat;
+            font-weight: 900;
+            font-size: 1.2em;
+
+        }
+        span a{
+             text-decoration: none;
+        }
+        .scrolled .company-name {
+            opacity: 1;
+            text-decoration: none;
+        }
+    </style>
+    <script src="/src/components/efecto.js"></script>
+
+
+</html>
