@@ -1,18 +1,24 @@
+---
+import LogoBlog from '../img/Logo_ES_Post.png';
+---
+
+
 <!--*********** Barra navegacion fija ********************************-->
 <html lang="es">
     <div class="logo-economic">
-        <img src="/src/img/GIF-3.gif" width="250" height="250" />
+        <img src={LogoBlog.src} alt="logo-blog"/>
+        <!-- <img src="/src/img/GIF-3.gif" width="250" height="250" />-->
         <!-- <img src="" alt="bannerlogo-ECONOMICSALES" />-->
         <nav id="menu">
             <a href="index.html"><span id="company-name" class="company-name">ECONOMIC SALES</span></a>
             <ul>
                 <!-- <li><a href="index.html"> INICIO</a></li>-->
                 <li><a href="/BLOG/blog.html">BLOG</a></li>
-                <li><a href="/nosotros">NOSOTROS</a></li>
-                <li><a href="/design">DISEÑO</a></li>
-                <li><a href="/venta">VENTA DE EQUIPO</a></li>
-                <li><a href="/patrocinios">PATROCINIOS</a></li>
-                <li><a href="/contacto"> CONTACTO</a></li>
+                <li><a href="https://economicsales.com/nosotros/">NOSOTROS</a></li>
+                <li><a href="https://economicsales.com/design/">DISEÑO</a></li>
+                <li><a href="https://economicsales.com/venta/">VENTA DE EQUIPO</a></li>
+                <li><a href="https://economicsales.com/patrocinios/">PATROCINIOS</a></li>
+                <li><a href="https://economicsales.com/contacto/"> CONTACTO</a></li>
             </ul>
         </nav>
     </div>
@@ -34,11 +40,14 @@
             flex-wrap: wrap;
             align-items: center;
             place-items: center;
-            width: 80%;
+            width: 65%;
             height: 100%;
             font-weight: bold;
             list-style: none;
             justify-content: end;
+            position: relative;
+            left: 15%;
+            gap:10px;
         }
         #menu ul li a {
             text-decoration: none;

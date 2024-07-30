@@ -1,3 +1,9 @@
+---
+import Facebook from '../img/facebooklogo.png';
+import Instagram from '../img/instagramlogo.png';
+import Linked from '../img/linkedinlogo.png';
+---
+
 <footer class="footer">
 	<div class="grupo1">
 		<!--COLOCAR CALSES .CLASE* NUMERO DE CLASES IGUALES EJEMPL .CLASE*3-->
@@ -17,31 +23,32 @@
 				la Cámara de Comercio, Paseo de la Reforma #42, Juárez, Ciudad de
 				México.
 			</p>
+
 		</div>
 		<div class="box num2">
 			<h3><b>NUESTRAS REDES</b></h3>
 			<div class="logos">
 				<div class="minibox">
-					<a href="https://www.facebook.com/EconomicSalesDeMexicoSaDeCv?locale=es_LA"><img
-							src="/src/img/facebooklogo.png"
-							alt="logo facebook", class="max"/></a>
+					<a href="https://www.facebook.com/EconomicSalesDeMexicoSaDeCv?locale=es_LA">
+						<img class="max-face"/></a>
+							<!--src="/src/img/facebooklogo.png"
+							alt="logo facebook", -->
 				</div>
 				<div class="minibox">
-					<a href="https://www.instagram.com/economicsalesmx/?igshid=MzRlODBiNWFlZA%3D%3D"><img
-							src="/src/img/instagramlogo.png"
-							alt="logo instagram", class="max"/></a>
-				</div>
+					<a href="https://www.instagram.com/economicsalesmx/?igshid=MzRlODBiNWFlZA%3D%3D">
+						<img class="max-insta"/></a>
+				</div> <!--src="/src/img/instagramlogo.png"
+							alt="logo instagram", -->
 				<div class="minibox">
-					<a href="https://www.linkedin.com/company/economic-sales-de-m%C3%A9xico-sa-de-cv/mycompany/?viewAsMember=true"><img
-							src="/src/img/	linkedinlogo.png"
-							alt="logo linkedin",
-							class="max"/></a>
-				</div>
+					<a href="https://www.linkedin.com/company/economic-sales-de-m%C3%A9xico-sa-de-cv/mycompany/?viewAsMember=true">
+						 <img class="max-link"/></a>
+				</div> <!--src="/src/img/	linkedinlogo.png"
+							alt="logo linkedin", -->
 			</div>
 		</div>
 		<div class="box num3">
 			<figure>
-				<a href="index.html">
+				<a href="https://economicsales.com/">
 					<h3 class="tituloEc">ECONOMIC SALES DE MÉXICO</h3>
 				</a>
 			</figure>
@@ -131,8 +138,31 @@
 		height: 100px;
 	}
 
+	/*
 	.max {
 		max-width: 80px;
+		height: 80px;
+	}
+	*/
+	.max-insta{
+		background-image: url(../img/instagramlogo.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 80px;
+		height: 80px;
+	}
+	.max-link{
+		background-image: url(../img/linkedinlogo.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 80px;
+		height: 80px;
+	}
+	.max-face{
+		background-image: url(../img/facebooklogo.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 80px;
 		height: 80px;
 	}
 </style>
