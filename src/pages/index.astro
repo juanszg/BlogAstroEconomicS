@@ -11,6 +11,7 @@ import DarkMode from "../components/DarkMode.astro";
 ---
 
 <Layout title="Blog Economic Sales de Mexico">
+	<body>
 	<!-- MENU -->
 	<div class="barra">
 		<!--<img src="#">  -->
@@ -49,21 +50,22 @@ import DarkMode from "../components/DarkMode.astro";
 		</div>
 		<hr class="custom" />
 		<hr class="custom" />
+		<!--<div class="botoon"><a href="/primero">Litio</a></div> -->
 		<div class="box">
-			<div class="texto">
-				<Entradas
-					href="#"
-					titulo="Proximamente..."
-					fecha="..."
-					autor="Mario Sanchez"
-					descripcion=" "
-				/>
-			</div>
-			<div class="img">
-				<div class="imagen">
-					<div class="imagen2"></div>
+				<div class="texto">
+					<Entradas
+						href="/primero"
+						titulo="EL LITIO Y SUS ALTERNATIVAS PARA EL FUTURO"
+						fecha="30/07/24"
+						autor="Dany Arda"
+						descripcion="El litio ha sido el rey de las baterías recargables durante décadas, impulsando todo, desde nuestros teléfonos inteligentes hasta los vehículos eléctricos. Sin embargo, la dependencia del litio no está exenta de riesgos. "
+					/>
 				</div>
-			</div>
+				<div class="img">
+					<div class="imagen">
+						<div class="imagen2"></div>
+					</div>
+				</div>	
 		</div>
 		<hr class="custom" />
 		<hr class="custom" />
@@ -203,9 +205,14 @@ import DarkMode from "../components/DarkMode.astro";
 		-->
 	</main>
 	<Footer />
+</body>
 </Layout>
 
 <style>
+	body{
+		background-color: gainsboro;
+		background-image: url('../img/ruidoBackground.png');
+	}
 	main {
 		margin: auto;
 		padding: 1rem;
@@ -214,6 +221,11 @@ import DarkMode from "../components/DarkMode.astro";
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
+	}
+	.botoon{
+		width: 100px;
+		height: 100px;
+		background-color: green;
 	}
 	.custom {
 		background-color: rgb(0, 20, 136);
@@ -239,8 +251,9 @@ import DarkMode from "../components/DarkMode.astro";
 		grid-column-gap: 15px;
 		grid-row-gap: 0px;
 		padding: 1em;
+		border-radius: 1em;
 	}
-	
+
 	.box:hover {
 		background-color: rgb(183, 237, 255);
 		border-radius: 1em;
