@@ -12,46 +12,46 @@ import DarkMode from "../components/DarkMode.astro";
 
 <Layout title="Blog Economic Sales de Mexico">
 	<body>
-	<!-- MENU -->
-	<div class="barra">
-		<!--<img src="#">  -->
-	</div>
-	<div class="nav-fija">
-		<NavFija />
-	</div>
-	<div class="nav-pop">
-		<Dropdown />
-	</div>
-	<!-- MENU -->
-	<div class="boton-dark">
-		<DarkMode />
-	</div>
-	<main>
-		<!--<h1>BLOG <span class="text-gradient"> ECONOMIC SALES</span></h1> -->
-		<!-- <ul role="list" class="link-card-grid">-->
+		<!-- MENU -->
+		<div class="barra">
+			<!--<img src="#">  -->
+		</div>
+		<div class="nav-fija">
+			<NavFija />
+		</div>
+		<div class="nav-pop">
+			<Dropdown />
+		</div>
+		<!-- MENU -->
+		<div class="boton-dark">
+			<DarkMode />
+		</div>
+		<main>
+			<!--<h1>BLOG <span class="text-gradient"> ECONOMIC SALES</span></h1> -->
+			<!-- <ul role="list" class="link-card-grid">-->
 
-		<div class="box">
-			<div class="texto">
-				<Entradas
-					href="https://economicsales.com/BLOG/opcion-eco/opcion-eco.html"
-					titulo="OPCIONES ECO-FRIENDLY"
-					fecha="16/07/24"
-					autor="Mario Sanchez"
-					descripcion="En este blog de mostraremos unas opciones eco-fliendly que puedes encontrar en el mercado "
-				/>
-			</div>
-			<div class="img">
-				<div class="imagen1"></div>
-				<!-- 
+			<div class="box">
+				<div class="texto">
+					<Entradas
+						href="https://economicsales.com/BLOG/opcion-eco/opcion-eco.html"
+						titulo="OPCIONES ECO-FRIENDLY"
+						fecha="16/07/24"
+						autor="Mario Sanchez"
+						descripcion="En este blog de mostraremos unas opciones eco-fliendly que puedes encontrar en el mercado "
+					/>
+				</div>
+				<div class="img">
+					<div class="imagen1"></div>
+					<!-- 
 			<img src={Imagen1.src} />
 			<Image src={Imagen1} alt="cover" />
             -->
+				</div>
 			</div>
-		</div>
-		<hr class="custom" />
-		<hr class="custom" />
-		<!--<div class="botoon"><a href="/primero">Litio</a></div> -->
-		<div class="box">
+			<hr class="custom" />
+			<hr class="custom" />
+			<!--<div class="botoon"><a href="/primero">Litio</a></div> -->
+			<div class="box">
 				<div class="texto">
 					<Entradas
 						href="/primero"
@@ -65,37 +65,37 @@ import DarkMode from "../components/DarkMode.astro";
 					<div class="imagen">
 						<div class="imagen2"></div>
 					</div>
-				</div>	
-		</div>
-		<hr class="custom" />
-		<hr class="custom" />
-		<div class="box">
-			<div class="texto">
-				<Entradas
-					href="#"
-					titulo="Proximamente..."
-					fecha="..."
-					autor="Mario Sanchez"
-					descripcion=" "
-				/>
-			</div>
-			<div class="img">
-				<div class="imagen">
-					<div class="imagen3"></div>
 				</div>
 			</div>
 			<hr class="custom" />
-			<!-- <Card
+			<hr class="custom" />
+			<div class="box">
+				<div class="texto">
+					<Entradas
+						href="./segundo"
+						titulo="HÁBITATS ARTIFICIALES Y CIUDADES SUBMARINAS"
+						fecha="02/08/24"
+						autor="Andrea Zenteno"
+						descripcion="Desde pequeños acuarios hasta grandes ciudades, estos espacios alteran las condiciones naturales para adaptarse a nuestras demandas. La idea de vivir en otros ambientes diferentes al nuestro ha sido gracias a múltiples historias de ciencia ficción, pero hoy más que nunca, se está convirtiendo en una posibilidad cada vez más tangible gracias a los avances tecnológicos. "
+					/>
+				</div>
+				<div class="img">
+					<div class="imagen">
+						<div class="imagen3"></div>
+					</div>
+				</div>
+				<hr class="custom" />
+				<!-- <Card
 			href="https://docs.astro.build/"
 			title="Documentation"
 			body="Learn how Astro works and explore the official API docs."
 			/>
 			-->
-			<!-- </ul>-->
-		</div>
-		<hr class="custom" />
-		<hr class="custom" />
-		<!-- <div class="box">
+				<!-- </ul>-->
+			</div>
+			<hr class="custom" />
+			<hr class="custom" />
+			<!-- <div class="box">
 		
 			<div class="texto">
 				<Entradas
@@ -203,15 +203,15 @@ import DarkMode from "../components/DarkMode.astro";
 			</div>
 		</div>
 		-->
-	</main>
-	<Footer />
-</body>
+		</main>
+		<Footer />
+	</body>
 </Layout>
 
 <style>
-	body{
+	body {
 		background-color: gainsboro;
-		background-image: url('../img/ruidoBackground.png');
+		background-image: url("../img/ruidoBackground.png");
 	}
 	main {
 		margin: auto;
@@ -222,7 +222,7 @@ import DarkMode from "../components/DarkMode.astro";
 		font-size: 20px;
 		line-height: 1.6;
 	}
-	.botoon{
+	.botoon {
 		width: 100px;
 		height: 100px;
 		background-color: green;
@@ -322,7 +322,7 @@ import DarkMode from "../components/DarkMode.astro";
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-image: url("../assets/img/cover-50.jpg");
+		background-image: url("../assets/img/blog-2.jpg");
 		grid-area: 1 / 3 / 2 / 4;
 	}
 	.barra {
