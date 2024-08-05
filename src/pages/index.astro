@@ -91,6 +91,22 @@ import DarkMode from "../components/DarkMode.astro";
 			</div>
 			<hr class="custom" />
 			<hr class="custom" />
+			<div class="box">
+				<div class="texto">
+					<Entradas
+						href="./tercero"
+						titulo=" JUEGOS OLÍMPICOS DE PARÍS 2024!🥈🥇🥉"
+						fecha="05/08/24"
+						autor="Juan Sánchez"
+						descripcion="En Economic Sales, sabemos que nuestros clientes son apasionados por la tecnología y el deporte. Por eso, queremos compartir contigo las últimas novedades que harán de tu experiencia olímpica algo inolvidable "
+					/>
+				</div>
+				<div class="img">
+					<div class="imagen4"></div>
+				</div>
+			</div>
+			<hr class="custom" />
+
 			<!-- <div class="box">
 		
 			<div class="texto">
@@ -215,8 +231,7 @@ import DarkMode from "../components/DarkMode.astro";
 		width: 950px;
 		max-width: calc(100% - 2rem);
 		color: white;
-		font-size:1.1em;
-		
+		font-size: 1.1em;
 	}
 	.botoon {
 		width: 100px;
@@ -322,19 +337,29 @@ import DarkMode from "../components/DarkMode.astro";
 		background-image: url("../assets/img/blog-2.jpg");
 		grid-area: 1 / 3 / 2 / 4;
 	}
+	.imagen4 {
+		width: 330px;
+		height: 330px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url("../assets/img/blog-3.jpg");
+		grid-area: 1 / 3 / 2 / 4;
+	}
+
 	.barra {
-        display: none;
-        width: 100%;
-        /*background-color: rgb(0, 0, 175);*/
-        background-color: gainsboro;
-        height: 160px;
-        text-align: center;
-        padding-top: 1em;
-        background-image: url('../img/Logo_ES_Post.png');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+		display: none;
+		width: 100%;
+		/*background-color: rgb(0, 0, 175);*/
+		background-color: gainsboro;
+		height: 160px;
+		text-align: center;
+		padding-top: 1em;
+		background-image: url("../img/Logo_ES_Post.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 	/*.barra {
 		display: none;
 		width: 100%;
