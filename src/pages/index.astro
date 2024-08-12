@@ -29,7 +29,22 @@ import DarkMode from "../components/DarkMode.astro";
 		<main>
 			<!--<h1>BLOG <span class="text-gradient"> ECONOMIC SALES</span></h1> -->
 			<!-- <ul role="list" class="link-card-grid">-->
-
+				<div class="box">
+					<div class="texto">
+						<Entradas
+							href="./tercero"
+							titulo=" SERVICIOS DE ALMACENAMIENTO EN LA NUBE"
+							fecha="12/08/24"
+							autor="Juan Sánchez"
+							descripcion="La posibilidad de guardar archivos de manera segura y accesible desde cualquier dispositivo es una necesidad en la era digital. Aquí te presento siete servicios de almacenamiento en la nube, con opciones tanto gratuitas como premium, que te permiten alojar y gestionar tus archivos de manera eficiente. "
+						/>
+					</div>
+					<div class="img">
+						<div class="imagen5 "></div>
+					</div>
+				</div>
+				<hr class="custom" />
+				<hr class="custom" />
 			<div class="box">
 				<div class="texto">
 					<Entradas
@@ -348,6 +363,15 @@ import DarkMode from "../components/DarkMode.astro";
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url("../assets/img/blog-3.jpg");
+		grid-area: 1 / 3 / 2 / 4;
+	}
+	.imagen5 {
+		width: 330px;
+		height: 330px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url("../assets/img/blog-4.jpg");
 		grid-area: 1 / 3 / 2 / 4;
 	}
 
