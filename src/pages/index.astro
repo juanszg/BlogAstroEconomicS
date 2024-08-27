@@ -29,39 +29,43 @@ import DarkMode from "../components/DarkMode.astro";
 		<main>
 			<!--<h1>BLOG <span class="text-gradient"> ECONOMIC SALES</span></h1> -->
 			<!-- <ul role="list" class="link-card-grid">-->
-				<div class="box">
-					<div class="texto">
-						<Entradas
-							href="./quinto"
-							titulo="TECNOESTRÉS: UNA MIRADA A LOS DESAFIÓS DEL MUNDO DIGITAL"
-							fecha="27/08/24"
-							autor="Dany Arda"
-							descripcion="El tecnoestrés es el estrés causado por el uso excesivo y la dependencia de la tecnología digital, afectando tanto la salud mental como física.Para mitigarlo, es crucial establecer límites en el uso de tecnología, promover el autocuidado y crear un equilibrio entre la vida laboral y personal. "
-			        />
-					</div>
+			<div class="box">
+				<div class="texto">
+					<Entradas
+						href="./quinto"
+						titulo="TECNOESTRÉS: UNA MIRADA A LOS DESAFIÓS DEL MUNDO DIGITAL"
+						fecha="27/08/24"
+						autor="Dany Arda"
+						descripcion="El tecnoestrés es el estrés causado por el uso excesivo y la dependencia de la tecnología digital, afectando tanto la salud mental como física.Para mitigarlo, es crucial establecer límites en el uso de tecnología, promover el autocuidado y crear un equilibrio entre la vida laboral y personal. "
+					/>
+				</div>
+				<a href="/quinto">
 					<div class="img">
 						<div class="imagen6"></div>
 					</div>
-				</div>
-				<hr class="custom" />
-				<hr class="custom" />
+				</a>
+			</div>
+			<hr class="custom" />
+			<hr class="custom" />
 
-				<div class="box">
-					<div class="texto">
-						<Entradas
-							href="./cuarto"
-							titulo=" SERVICIOS DE ALMACENAMIENTO EN LA NUBE"
-							fecha="12/08/24"
-							autor="Juan Sánchez"
-							descripcion="La posibilidad de guardar archivos de manera segura y accesible desde cualquier dispositivo es una necesidad en la era digital. Aquí te presento siete servicios de almacenamiento en la nube, con opciones tanto gratuitas como premium, que te permiten alojar y gestionar tus archivos de manera eficiente. "
-						/>
-					</div>
-					<div class="img">
-						<div class="imagen5 "></div>
-					</div>
+			<div class="box">
+				<div class="texto">
+					<Entradas
+						href="./cuarto"
+						titulo=" SERVICIOS DE ALMACENAMIENTO EN LA NUBE"
+						fecha="12/08/24"
+						autor="Juan Sánchez"
+						descripcion="La posibilidad de guardar archivos de manera segura y accesible desde cualquier dispositivo es una necesidad en la era digital. Aquí te presento siete servicios de almacenamiento en la nube, con opciones tanto gratuitas como premium, que te permiten alojar y gestionar tus archivos de manera eficiente. "
+					/>
 				</div>
-				<hr class="custom" />
-				<hr class="custom" />
+				<a href="./cuarto">
+					<div class="img">
+						<div class="imagen5"></div>
+					</div>
+				</a>
+			</div>
+			<hr class="custom" />
+			<hr class="custom" />
 			<div class="box">
 				<div class="texto">
 					<Entradas
@@ -72,9 +76,11 @@ import DarkMode from "../components/DarkMode.astro";
 						descripcion="En Economic Sales, sabemos que nuestros clientes son apasionados por la tecnología y el deporte. Por eso, queremos compartir contigo las últimas novedades que harán de tu experiencia olímpica algo inolvidable "
 					/>
 				</div>
-				<div class="img">
-					<div class="imagen4 "></div>
-				</div>
+				<a href="/tercero">
+					<div class="img">
+						<div class="imagen4"></div>
+					</div>
+				</a>
 			</div>
 			<hr class="custom" />
 			<hr class="custom" />
@@ -87,29 +93,33 @@ import DarkMode from "../components/DarkMode.astro";
 						fecha="30/07/24"
 						autor="Dany Arda"
 						descripcion="El litio ha sido el rey de las baterías recargables durante décadas, impulsando todo, desde nuestros teléfonos inteligentes hasta los vehículos eléctricos. Sin embargo, la dependencia del litio no está exenta de riesgos. "
-						/>
-					</div>
+					/>
+				</div>
+				<a href="/primero">
 					<div class="img">
 						<div class="imagen2"></div>
 					</div>
-				</div>
-				<hr class="custom" />
-				<hr class="custom" />
-				<div class="box">
-					<div class="texto">
-						<Entradas
+				</a>
+			</div>
+			<hr class="custom" />
+			<hr class="custom" />
+			<div class="box">
+				<div class="texto">
+					<Entradas
 						href="./segundo"
 						titulo="HÁBITATS ARTIFICIALES Y CIUDADES SUBMARINAS"
 						fecha="02/08/24"
 						autor="Andrea Zenteno"
 						descripcion="Desde pequeños acuarios hasta grandes ciudades, estos espacios alteran las condiciones naturales para adaptarse a nuestras demandas. La idea de vivir en otros ambientes diferentes al nuestro ha sido gracias a múltiples historias de ciencia ficción, pero hoy más que nunca, se está convirtiendo en una posibilidad cada vez más tangible gracias a los avances tecnológicos. "
-						/>
-					</div>
+					/>
+				</div>
+				<a href="/segundo">
 					<div class="img">
 						<div class="imagen3"></div>
 					</div>
-					<hr class="custom" />
-					<!-- <Card
+				</a>
+				<hr class="custom" />
+				<!-- <Card
 					
 						</div>
 					</div>
@@ -141,8 +151,7 @@ import DarkMode from "../components/DarkMode.astro";
 					<img src={Imagen1.src} />
 					<Image src={Imagen1} alt="cover" />
 					-->
-			
-		
+
 			<!-- <div class="box">
 				
 			<div class="texto">
@@ -304,6 +313,8 @@ import DarkMode from "../components/DarkMode.astro";
 	.box:hover {
 		background-color: rgb(183, 237, 255);
 		border-radius: 1em;
+		transform: scale(1.1);
+		transition: 0.25s ease-in;
 	}
 	body.dark .box:hover {
 		background-color: rgb(0, 10, 32);
