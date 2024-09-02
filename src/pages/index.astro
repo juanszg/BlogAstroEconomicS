@@ -29,6 +29,25 @@ import DarkMode from "../components/DarkMode.astro";
 		<main>
 			<!--<h1>BLOG <span class="text-gradient"> ECONOMIC SALES</span></h1> -->
 			<!-- <ul role="list" class="link-card-grid">-->
+				<div class="box">
+					<div class="texto">
+						<Entradas
+							href="./sexto"
+							titulo="UN MUNDO ASFIXIADO. EL PROBLEMA DE LA BASURA"
+							fecha="2/09/24"
+							autor="Andrea Zenteno"
+							descripcion="¿Recuerdas la desoladora imagen de la Tierra en Wall-E, completamente cubierta de basura? Aquella visión futurista, que en su momento nos pareció exagerada, hoy se nos presenta como una posible realidad si no tomamos medidas urgentes."
+						/>
+					</div>
+					<a href="/sexto">
+						<div class="img">
+							<div class="imagen7"></div>
+						</div>
+					</a>
+				</div>
+				<hr class="custom" />
+				<hr class="custom" />
+
 			<div class="box">
 				<div class="texto">
 					<Entradas
@@ -36,7 +55,7 @@ import DarkMode from "../components/DarkMode.astro";
 						titulo="TECNOESTRÉS: UNA MIRADA A LOS DESAFIÓS DEL MUNDO DIGITAL"
 						fecha="27/08/24"
 						autor="Dany Arda"
-						descripcion="El tecnoestrés es el estrés causado por el uso excesivo y la dependencia de la tecnología digital, afectando tanto la salud mental como física.Para mitigarlo, es crucial establecer límites en el uso de tecnología, promover el autocuidado y crear un equilibrio entre la vida laboral y personal. "
+						descripcion="El tecnoestrés es el estrés causado por el uso excesivo y la dependencia de la tecnología digital, afectando tanto la salud mental como física.Para mitigarlo, es crucial establecer límites en el uso de tecnología, promover el autocuidado y crear un equilibrio entre la vida laboral y personal."
 					/>
 				</div>
 				<a href="/quinto">
@@ -409,6 +428,15 @@ import DarkMode from "../components/DarkMode.astro";
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url("../assets/img/blog-5.jpg");
+		grid-area: 1 / 3 / 2 / 4;
+	}
+	.imagen7 {
+		width: 330px;
+		height: 330px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url("../assets/img/blog-6.jpg");
 		grid-area: 1 / 3 / 2 / 4;
 	}
 

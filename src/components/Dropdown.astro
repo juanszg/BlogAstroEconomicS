@@ -115,6 +115,9 @@
             display: none !important;
             /*background: rgba(74, 188, 190, 0.1);*/
             background-color: rgb(249, 249, 249);
+            background-image: url('../img/ruidoBackground.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             position: absolute;
             right: 4rem;
             top: 170px;
@@ -127,17 +130,18 @@
             /*padding: 3.5em;*/
 
             overflow: hidden;
-            transition: height 0.2s cubic-bezier(0.175, 0.882, 0.32, 1.275);
+            transition: all 2s ease-in;
         }
 
         .dropdown-menu li {
             padding: 0.5em;
             text-align: center;
             font-family: montserrat;
-            font-weight: 800;
+            font-weight: 700;
+            font-size: 1.5em;
         }
         .dropdown-menu a {
-            color: darkblue;
+            color: rgb(0, 0, 57);
         }
         .dropdown-menu a:hover {
             color: rgb(127, 223, 255);
@@ -145,8 +149,9 @@
 
         .dropdown-menu.open {
             display: block !important;
-            height: 420px;
+            height: 400px;
             z-index: 999;
+          
         }
         .navbar .enlaces {
             display: none; /* Si quiero el texto de navegacion horizontal en la navbar */
@@ -233,7 +238,7 @@
             .dropdown-menu {
                 position: absolute;
                 right: 1.5rem;
-                top: 150px;
+                top: 190px;
             }
         }
         @media (max-width: 360px) {

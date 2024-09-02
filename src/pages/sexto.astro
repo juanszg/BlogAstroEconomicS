@@ -41,6 +41,9 @@ import DarkMode from "../components/DarkMode.astro";
                 problemática de los desechos es una de las mayores crisis
                 ambientales que enfrentamos.
             </p><br /><br />
+            <div class="imagen">
+                <div class="imagen-1"></div>
+            </div>
             <h3>Nuestros residuos</h3>
             <p>
                 <b
@@ -124,23 +127,39 @@ import DarkMode from "../components/DarkMode.astro";
                 tecnología están desarrollando soluciones innovadoras para hacer
                 frente al problema de la basura:
             </p>
+
+            <div class="imagen">
+                <div class="imagen-3"></div>
+            </div><br /><br />
+
+            <b>• Biodegradación acelerada:</b>
             <p>
-                <b>• Biodegradación acelerada:</b>
-                Investigadores están desarrollando microorganismos y enzimas capaces
-                de descomponer plásticos y otros materiales no biodegradables en
-                un tiempo mucho más corto.<br /><br />
+                Investigadores están desarrollando microorganismos y enzimas
+                capaces de descomponer plásticos y otros materiales no
+                biodegradables en un tiempo mucho más corto.<br /><br />
+            </p>
+            <b>• Reciclaje avanzado:</b>
+            <p>
+                Nuevas tecnologías permiten reciclar materiales que antes eran
+                difíciles de procesar, como los plásticos mixtos.
+            </p>
+            <br /><br />
+            <div class="imagen">
+                <div class="imagen-2"></div>
+            </div><br /><br />
 
-                <b>• Reciclaje avanzado:</b> Nuevas tecnologías permiten reciclar
-                materiales que antes eran difíciles de procesar, como los plásticos
-                mixtos.<br /><br />
-
-                <b>• Economía circular:</b> Este modelo de producción y consumo busca
-                minimizar la generación de residuos y maximizar la reutilización
-                de los materiales. <br /><br />
-
-                <b>• Impresión 3D:</b> La fabricación aditiva permite crear productos
-                personalizados con menos material y menos residuos.
-            </p><br /><br />
+            <b>• Economía circular:</b>
+            <p>
+                Este modelo de producción y consumo busca minimizar la
+                generación de residuos y maximizar la reutilización de los
+                materiales. <br /><br />
+            </p>
+            <b>• Impresión 3D:</b>
+            <p>
+                La fabricación aditiva permite crear productos personalizados
+                con menos material y menos residuos.
+            </p>
+            <br /><br />
             <h4>
                 La solución al problema de la basura no es sencilla y requiere
                 un cambio de paradigma en la forma en que producimos y
@@ -150,24 +169,35 @@ import DarkMode from "../components/DarkMode.astro";
             <!-- flexbox -->
             <div class="flex">
                 <div class="num1">
-                    <b>1) REDUCIR<br /><br /> Minimizar el consumo de productos
-                    desechables y optar por alternativas reutilizables.</b>
+                    <b
+                        >1) REDUCIR<br /><br /> Minimizar el consumo de productos
+                        desechables y optar por alternativas reutilizables.</b
+                    >
                 </div>
                 <div class="num2">
-                    <b>2) REUTILIZAR <br /><br />Dar una segunda vida a los
-                    objetos y evitar desecharlos prematuramente. </b>
+                    <b
+                        >2) REUTILIZAR <br /><br />Dar una segunda vida a los
+                        objetos y evitar desecharlos prematuramente.
+                    </b>
                 </div>
                 <div class="num3">
-                    <b>3) RECICLAR ♻️ <br /><br />Separar los residuos y
-                    depositarlos en los contenedores correspondientes.</b>
+                    <b
+                        >3) RECICLAR ♻️ <br /><br />Separar los residuos y
+                        depositarlos en los contenedores correspondientes.</b
+                    >
                 </div>
                 <div class="num4">
-                    <b>4) COMPOSTAR<br /><br /> Transformar los residuos orgánicos
-                    en abono para enriquecer el suelo.</b>
+                    <b
+                        >4) COMPOSTAR<br /><br /> Transformar los residuos orgánicos
+                        en abono para enriquecer el suelo.</b
+                    >
                 </div>
                 <div class="num5">
-                    <b>5) EXIGIR A LAS EMPRESAS <br /><br /> Apoyar a aquellas empresas
-                    que adopten prácticas sostenibles y reduzcan su impacto ambiental.</b>
+                    <b
+                        >5) EXIGIR A LAS EMPRESAS <br /><br /> Apoyar a aquellas
+                        empresas que adopten prácticas sostenibles y reduzcan su
+                        impacto ambiental.</b
+                    >
                 </div>
             </div>
             <h4>
@@ -175,10 +205,13 @@ import DarkMode from "../components/DarkMode.astro";
                 a tomar acción. El futuro de nuestro planeta está en nuestras
                 manos.
             </h4>
+            <div class="imagen">
+                <div class="imagen-4"></div>
+            </div>
         </div>
     </body>
-    <Footer />
 </Layout>
+<Footer />
 
 <style>
     body {
@@ -195,6 +228,42 @@ import DarkMode from "../components/DarkMode.astro";
         padding: 2em;
         border-radius: 0.5em;
         line-height: auto;
+    }
+    .imagen-1 {
+        width: 100%;
+        height: 370px;
+        background-image: url("../img/img-6/basurero.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+    .imagen-2 {
+        width: 100%;
+        height: 370px;
+        background-image: url("../img/img-6/botella.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+    .imagen-3 {
+        width: 100%;
+        height: 370px;
+        background-image: url("../img/img-6/biodegradacion.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+    .imagen-4 {
+        width: 100%;
+        height: 370px;
+        background-image: url("../img/img-6/reciclando.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: auto;
     }
     .flex {
         display: flex;
@@ -216,15 +285,15 @@ import DarkMode from "../components/DarkMode.astro";
         background-color: rgb(173, 230, 192);
         border-radius: 1em;
         padding: 2em;
-        transition: transform .2s ease;
-        background-image: url('../img/ruidoBackground.png');
+        transition: transform 0.2s ease;
+        background-image: url("../img/ruidoBackground.png");
         background-repeat: no-repeat;
         background-size: cover;
-        cursor:crosshair;
+        cursor: crosshair;
     }
     .flex div:hover {
         transform: scale(1.1);
-        background-color: rgb(77, 225, 126);   
+        background-color: rgb(77, 225, 126);
     }
     body.dark .flex div {
         background-color: rgb(50, 0, 188);
@@ -249,7 +318,10 @@ import DarkMode from "../components/DarkMode.astro";
     body.dark p {
         color: gainsboro;
     }
-    h3 {
+    h3{
+        font-size: 1.5em;
+    }
+    body.dark h3 {
         font-weight: 900;
         font-size: 1.5em;
     }
@@ -278,9 +350,7 @@ import DarkMode from "../components/DarkMode.astro";
         /*background-color: rgb(51, 51, 51);*/
     }
     body.dark .imagen {
-        background-color: rgb(240, 240, 240);
-        padding: 1em;
-        border-radius: 1em;
+        /* background-color: rgb(240, 240, 240);*/
     }
 
     h3 {
