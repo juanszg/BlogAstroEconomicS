@@ -32,6 +32,24 @@ import DarkMode from "../components/DarkMode.astro";
 				<div class="box">
 					<div class="texto">
 						<Entradas
+							href="/trece"
+							titulo="¿JURASSIC PARK, realidad o ficción? "
+							fecha="19/09/24"
+							autor="Andrea Zenteno"
+							descripcion="¿Quién no ha soñado alguna vez con ver un dinosaurio en vivo y en directo? Gracias a la saga cinematográfica de Jurassic Park, la idea de clonar dinosaurios a partir de ADN extraído de mosquitos fosilizados en ámbar se ha arraigado en nuestro imaginario colectivo. Pero, ¿qué tan cerca estamos de hacer realidad esta fantasía científica?"/>
+					</div>
+					<a href="/trece">
+						<div class="img">
+							<div class="imagen13"></div>
+						</div>
+					 </a>
+				</div>
+				<hr class="custom" />
+				<hr class="custom" />
+			 <!-- entrada 13 -->
+				<div class="box">
+					<div class="texto">
+						<Entradas
 							href="./doce"
 							titulo="Sabor a Patria: Recetas Típicas para Festejar Nuestra Independencia"
 							fecha="13/09/24"
@@ -47,9 +65,7 @@ import DarkMode from "../components/DarkMode.astro";
 				</div>
 				<hr class="custom" />
 				<hr class="custom" />
-
-
-
+  <!-- entrada 12 -->
 				<div class="box">
 					<div class="texto">
 						<Entradas
@@ -556,7 +572,15 @@ import DarkMode from "../components/DarkMode.astro";
 		background-image: url("../assets/img/blog-12.jpg");
 		grid-area: 1 / 3 / 2 / 4;
 	}
-
+	.imagen13 {
+		width: 330px;
+		height: 330px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url("../assets/img/blog-13.jpg");
+		grid-area: 1 / 3 / 2 / 4;
+	}
 	.barra {
 		display: none;
 		width: 100%;
