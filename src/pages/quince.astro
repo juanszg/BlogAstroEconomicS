@@ -1,0 +1,536 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavFija from "../components/NavFija.astro";
+import Dropdown from "../components/Dropdown.astro";
+import Footer from "../components/Footer.astro";
+import DarkMode from "../components/DarkMode.astro";
+---
+
+<Layout title="Blog Economic Sales de Mexico">
+    <!-- MENU -->
+    <div class="barra">
+        <!--<img src="#">  -->
+    </div>
+    <div class="nav-fija">
+        <NavFija />
+    </div>
+    <div class="nav-pop">
+        <Dropdown />
+    </div>
+    <!-- MENU -->
+    <div class="boton-dark">
+        <DarkMode />
+    </div>
+    <body>
+        <div class="articulo">
+            <h1>
+                Revoluciona tus gráficos: Guía completa de tarjetas gráficas
+            </h1>
+            <hr />
+            <h2>
+                En esta guia entenderas el funcionamiento de una tarjeta
+                grafica, como funciona y porque es importante en nuestra
+                computadora
+            </h2>
+            <div class="fecha">
+                <p>Por Mario Sanchez - 26/Septiembre/24</p>
+            </div>
+            <h3>¿Qué es una tarjeta gráfica y por qué es importante?</h3>
+            <p>
+                Imagina tu computadora como una fábrica. <b
+                    >El procesador (CPU)</b
+                > es el gerente, que coordina todas las tareas. La tarjeta gráfica,
+                por su parte, es como un equipo especializado en diseño gráfico.
+                Se encarga de transformar los datos numéricos que el procesador le
+                envía en imágenes que podemos ver en la pantalla. <br /><br />
+
+                En términos técnicos, una <strong
+                    >tarjeta gráfica es un componente electrónico que se encarga
+                    de procesar los datos gráficos y convertirlos en imágenes
+                    visibles en un monitor</strong
+                >. Esencialmente, es un procesador especializado en cálculos
+                matemáticos relacionados con la creación de imágenes.
+            </p>
+            <div class="imagen imagen-1"></div>
+            <h3>¿Por qué es importante una tarjeta gráfica?</h3>
+            <p>
+                <b>• Renderizar imágenes:</b> Toma los datos 3D de un juego o una
+                aplicación y los convierte en imágenes 2D que podemos ver en la pantalla.<br
+                /><br />
+
+                <b>• Acelerar gráficos: </b>Al realizar cálculos gráficos
+                complejos, alivia la carga de trabajo del procesador, lo que
+                permite un mejor rendimiento general del sistema.<br /><br />
+
+                <b>• Mejorar la calidad de imagen:</b> Las tarjetas gráficas modernas
+                permiten disfrutar de imágenes más detalladas, con colores más vivos
+                y efectos visuales más realistas.<br /><br />
+
+                <b>• Habilitar tecnologías avanzadas:</b> Gracias a las tarjetas
+                gráficas podemos disfrutar de tecnologías como la realidad virtual,
+                la realidad aumentada y el ray tracing, que ofrecen experiencias
+                visuales inmersivas.
+            </p>
+            <h3>Componentes y funcionamiento de una tarjeta gráfica</h3>
+            <div class="remarcar">
+                <p class="componente">Unidad de Procesamiento Gráfico (GPU):</p>
+                <p>
+                    Es el chip principal responsable de realizar los cálculos
+                    matemáticos necesarios para renderizar imágenes en tiempo
+                    real. A diferencia de los procesadores centrales (CPU), las
+                    GPU están diseñadas para realizar muchas operaciones
+                    sencillas en paralelo, lo que las hace ideales para tareas
+                    gráficas.(Núcleos CUDA/Stream Processors)
+                </p>
+            </div>
+            <div class="remarcar">
+                <p class="componente">Memoria de Video (VRAM):</p>
+                <p>
+                    Almacena temporalmente los datos gráficos que la GPU
+                    necesita para renderizar una imagen. Cuanto mayor sea la
+                    capacidad de la VRAM y su ancho de banda, más texturas y
+                    geometría podrá manejar la GPU.
+                </p>
+            </div>
+            <div class="remarcar">
+                <p class="componente">
+                    Unidad de control de memoria (Memory Controller):
+                </p>
+                <p>Gestiona el acceso de la GPU a la VRAM.</p>
+            </div>
+            <div class="remarcar">
+                <p class="componente">Interfaz PCIe:</p>
+                <p>
+                    Conecta la tarjeta gráfica a la placa base, permitiendo la
+                    comunicación con el CPU y otros componentes del sistema.
+                </p>
+            </div>
+            <div class="remarcar">
+                <p class="componente">Módulo regulador de voltaje (VRM):</p>
+                <p>Proporciona la energía necesaria a la GPU.</p>
+            </div>
+            <div class="remarcar">
+                <p class="componente">Disipador térmico:</p>
+                <p>
+                    Enfría la GPU para evitar el sobrecalentamiento y garantizar
+                    un funcionamiento estable.
+                </p>
+            </div>
+            <div class="imagen imagen-2"></div>
+            <!-- parte 2 conceptos -->
+            <h3>
+                Algunos conceptos clave para entender a las tarjetas graficas
+            </h3>
+            <div class="cajas">
+                <div class="comp comp1">
+                    <h3>Núcleos CUDA/Stream Processors</h3>
+                    <hr class="custom" />
+                    <p>
+                        <b>¿Qué son?</b> Son los núcleos de procesamiento de la GPU,
+                        encargados de realizar los cálculos matemáticos necesarios
+                        para renderizar imágenes.<br /><br />
+                        <b>¿Qué significa?</b> Un mayor número de núcleos generalmente
+                        se traduce en un mayor rendimiento, especialmente en tareas
+                        que requieren mucha potencia de procesamiento gráfico, como
+                        los videojuegos.
+                    </p>
+                </div>
+                <div class="comp comp2">
+                    <h3>Frecuencia de reloj</h3>
+                    <hr class="custom" />
+                    <p>
+                        <b>¿Qué es? </b>Es la velocidad a la que funcionan los
+                        núcleos de la GPU.<br /><br />
+                        <b>¿Qué significa?</b> Una frecuencia de reloj más alta significa
+                        que los núcleos pueden realizar más cálculos por segundo,
+                        lo que se traduce en un mayor rendimiento.
+                    </p>
+                </div>
+                <div class="comp comp3">
+                    <h3>Ancho de banda de memoria</h3>
+                    <hr class="custom" />
+                    <p>
+                        <b> • ¿Qué es? </b>Es la cantidad de datos que la GPU
+                        puede leer y escribir en la VRAM por segundo.<br /><br
+                        />
+                        <b>• ¿Qué significa?</b> Un ancho de banda de memoria más
+                        alto significa que la GPU puede acceder a los datos de textura
+                        y geometría más rápidamente, lo que mejora el rendimiento
+                        en juegos y aplicaciones que requieren una gran cantidad
+                        de texturas. .
+                    </p>
+                </div>
+                <div class="comp comp4">
+                    <h3>TDP (Thermal Design Power)</h3>
+                    <hr class="custom" />
+                    <p>
+                        <b>• ¿Qué es?</b> Es la cantidad máxima de calor que una
+                        tarjeta gráfica puede generar.<br /><br />
+                        <b>• ¿Qué significa? </b> Un TDP más alto indica que la tarjeta
+                        gráfica consume más energía y requiere un sistema de refrigeración
+                        más potente.
+                    </p>
+                </div>
+                <div class="comp comp5">
+                    <h3>Otras especificaciones importantes</h3>
+                    <hr class="custom" />
+                    <p>
+                        • <strong>VRAM:</strong> La cantidad de memoria de video
+                        (VRAM) determina la cantidad de texturas y geometría que
+                        la tarjeta gráfica puede almacenar. Una mayor cantidad de
+                        VRAM es útil para juegos con altas resoluciones y configuraciones
+                        gráficas detalladas.<br /><br />
+                        • <strong>Tipo de VRAM:</strong> GDDR6 es el tipo de VRAM
+                        más común en las tarjetas gráficas modernas, ofrece un alto
+                        ancho de banda y baja latencia. <br /><br />
+                        • <strong>Interfaz de memoria:</strong> Indica el tipo de
+                        conexión entre la GPU y la VRAM. <br /><br />
+                        • <strong>Conectores de video:</strong> HDMI, DisplayPort,
+                        DVI son los conectores más comunes para conectar la tarjeta
+                        gráfica al monitor.<br /><br />
+                        • <strong>Soporte para tecnologías: </strong>Ray
+                        tracing, DLSS, etc. Son tecnologías que mejoran el
+                        rendimiento y la calidad visual de los gráficos.
+                    </p>
+                </div>
+            </div>
+            <div class="imagen imagen-3"></div>
+            <h2>Tabla comparativa de tarjetas graficas NVIDIA VS AMD</h2>
+            <div class="tabla">
+                <div class="especs">
+                    <p>
+                        <b>Especificacion:</b><br /><br /> Nucleos CUDA/Stream Processors<br
+                        /><br />Frecuencia de reloj (boost)<br /><br /> VRAM <br
+                        /><br /> Ancho de banda de memoria <br /><br /> TDP
+                    </p>
+                </div>
+                <div class="nvidia">
+                    <p>
+                        <b>NVIDIA GeForce RTX 3080</b><br /><br /> 10240 <br /><br /> 1.71GHz
+                        10 GB GDDR6X<br /><br /> 760 GB/s <br /><br />320W
+                    </p>
+                </div>
+                <div class="amd">
+                    <p>
+                        <b>ANR Radeon RX 6800 XT </b><br /><br /> 4608 <br /><br /> 2.25GHz
+                        <br /><br /> 16GB GDDR6 <br /><br /> 512 GB/s <br /><br
+                        /> 300W
+                    </p>
+                </div>
+            </div>
+        </div>
+        <Footer />
+
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                background-image: url("../img/ruidoBackground.png");
+                background-color: gainsboro;
+            }
+            h1 {
+                text-shadow:
+                    1px 1px 0px rgb(32, 199, 255),
+                    1px -1px 0px rgb(47, 32, 255),
+                    -1px 1px 0px rgb(181, 32, 255);
+            }
+            .articulo {
+                margin: auto;
+                margin-top: 1em;
+                background-color: whitesmoke;
+                width: 75%;
+                padding: 2em;
+                border-radius: 0.5em;
+                line-height: auto;
+            }
+            .custom {
+                border: none; /* Elimina el borde predeterminado */
+                /*  border-top: 2px dashed #00c6cd;*/
+                border-top: 2px dashed #020077;
+            }
+            body.dark .custom {
+                border-top: 2px dashed #0031a5;
+            }
+            .grupoimg {
+                display: flex;
+                gap: 15px;
+                flex-flow: row;
+            }
+            /*  .remarcar {
+                background-image: url("../img/ruidoBackground.png");
+                background-color: lightskyblue;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 1em;
+                border-radius: 1em;
+                margin: 1em;
+            }*/
+            .imagen-1 {
+                width: 370px;
+                height: 370px;
+                background-image: url("../img/img-15/nvidia.jpg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: auto;
+                border-radius: 1em;
+            }
+            .imagen-2 {
+                width: 370px;
+                height: 370px;
+                background-image: url("../img/img-15/placa.jpg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: auto;
+                border-radius: 1em;
+            }
+            .imagen-3 {
+                width: 370px;
+                height: 370px;
+                background-image: url("../img/img-15/nvidia2.jpg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: auto;
+                border-radius: 1em;
+            }
+            .tabla {
+                width: 95%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                text-align: center;
+                background-color: rgb(217, 217, 217);
+                border-radius: 1em;
+                box-shadow: 3px 3px 0 rgb(10, 0, 24);
+                padding: 1em;
+            }
+            body.dark .tabla{
+              background-color: #090084;
+            }
+            .specs{
+                grid-area: 1 / 1 / 2 / 2;
+            }
+            .nvidia{
+                grid-area: 1 / 2 / 2 / 3;
+            }
+            .amd{
+                grid-area: 1 / 3 / 2 / 4;
+            }
+            .componente {
+                text-align: center;
+                font-weight: 700;
+                font-size: 1.3em;
+            }
+            .cajas {
+                display: flex;
+                gap: 1em;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                
+            }
+            .comp {
+                width: 400px;
+                height: 400px;
+                background-color: #b4e8f9;
+                background-image: url("../img/ruidoBackground.png");
+                background-size: contain;
+                padding: 1em;
+                border-radius: 1em;
+                box-shadow: 3px 3px 0 rgb(10, 0, 24);
+                font-size: 1em;
+            }
+            @media (max-width: 500px) {
+                .comp {
+                    font-size: 0.85em;
+                    height: auto;
+                }
+                .tabla{
+                    font-size: .8em;
+                }
+            }
+            body.dark .comp {
+                background-color: #090084;
+            }
+         
+            .comp5 {
+                width: 100%;
+                height: auto;
+            }
+            .remarcar {
+                background-image: url("../img/ruidoBackground.png");
+                background-color: lightskyblue;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 1em;
+                border-radius: 1em;
+                margin: 0.5em;
+                box-shadow: 3px 3px 0 rgb(0, 3, 48);
+                text-shadow: 2px 2px 5px rgb(106, 161, 255);
+                text-align: center;
+            }
+            body.dark .remarcar {
+                background-color: rgb(0, 142, 94);
+                text-shadow: 2px 2px 5px rgb(9, 0, 24);
+            }
+            .flex {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+                align-content: flex-start;
+                width: 100%;
+                /*background-color: #26007d;*/
+                height: auto;
+                overflow: none;
+                flex-direction: row;
+                border-radius: 1em;
+            }
+            .flex div {
+                width: 450px;
+                height: auto;
+                margin: 20px;
+                background-color: rgb(173, 230, 192);
+                border-radius: 1em;
+                padding: 2em;
+                transition: transform 0.2s ease;
+                background-image: url("../img/ruidoBackground.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: crosshair;
+            }
+
+            .flex div:hover {
+                transform: scale(1.1);
+                background-color: rgb(77, 225, 126);
+            }
+            body.dark .flex div {
+                background-color: rgb(50, 0, 188);
+                color: whitesmoke;
+            }
+            body.dark .articulo {
+                background-color: rgb(12, 0, 78);
+                /*background-image: url("../img/ruidoBackground.png");*/
+            }
+            .fecha {
+                display: flex;
+                flex-flow: row-reverse;
+                flex-direction: end;
+            }
+            body.dark .fecha p {
+                color: rgb(161, 161, 161);
+            }
+            p {
+                font-weight: 500;
+                line-height: 1.5em;
+            }
+            body.dark p {
+                color: gainsboro;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+            body.dark h3 {
+                font-weight: 900;
+                font-size: 1.5em;
+            }
+            h4 {
+                font-weight: 900;
+                font-size: 1.3em;
+            }
+            body.dark h4 {
+                /*color: rgb(56, 166, 255);*/
+                color: rgb(74, 174, 255);
+            }
+            body.dark h2 {
+                color: gainsboro;
+            }
+            body.dark h1 {
+                color: gainsboro;
+            }
+            body.dark b {
+                /*color: rgb(168, 254, 225);*/
+                /*color: aqua;*/
+                color: rgb(140, 234, 255);
+            }
+            .imagen {
+                width: 100%;
+                height: 370px;
+                /*background-color: rgb(51, 51, 51);*/
+            }
+            body.dark .imagen {
+                /* background-color: rgb(240, 240, 240);*/
+            }
+            h3 {
+                color: darkblue;
+            }
+            body.dark h3 {
+                color: rgb(0, 208, 255);
+            }
+            /* MENU --------------------------------------*/
+
+            .barra {
+                display: none;
+                width: 100%;
+                /*background-color: rgb(0, 0, 175);*/
+                background-color: gainsboro;
+                height: 160px;
+                text-align: center;
+                padding-top: 1em;
+                background-image: url("../img/Logo_ES_Post.png");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            /*.barra img {
+        max-width: 95%;
+        height: 200px;
+    }*/
+            .nav-pop {
+                visibility: hidden;
+            }
+            @media (max-width: 750px) {
+                .nav-fija {
+                    display: none;
+                }
+                .nav-pop {
+                    visibility: visible;
+                    width: 100%;
+                    background-color: rgba(0, 58, 159, 0.567);
+                }
+                .navs {
+                    visibility: visible;
+                }
+                .barra {
+                    display: block;
+                }
+            }
+            @media (max-width: 500px) {
+                .imagen {
+                    width: 100%;
+                }
+                .remarcar {
+                    width: 90%;
+                    font-size: 0.85em;
+                }
+            }
+            @media (max-width: 470px) {
+                .flex div {
+                    margin: 5px;
+                    margin-top: 30px;
+                    padding: 1em;
+                }
+                .flex div p {
+                    font-size: 0.9rem;
+                }
+            }
+        </style>
+    </body></Layout
+>
