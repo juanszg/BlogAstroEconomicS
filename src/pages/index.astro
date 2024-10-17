@@ -29,12 +29,31 @@ import DarkMode from "../components/DarkMode.astro";
 		<main>
 			<!--<h1>BLOG <span class="text-gradient"> ECONOMIC SALES</span></h1> -->
 			<!-- <ul role="list" class="link-card-grid">-->
+				<div class="box">
+					<div class="texto">
+						<Entradas
+							href="/veintiuno"
+							titulo="¿Qué tan vulnerable eres para ser hackeado? "
+							fecha="17/10/24"
+							autor="Dany Arda"
+							descripcion="En la era digital, la seguridad de nuestros datos personales es más importante que nunca. Cada vez más, escuchamos sobre violaciones de datos y ciberataques que comprometen información sensible. Pero, ¿qué tan vulnerables somos realmente? Y, lo más importante, ¿cómo podemos protegernos? Aquí te ofrecemos un análisis sobre la vulnerabilidad y consejos prácticos para mantener tus datos seguros."
+						/>
+					</div>
+					<a href="/veintiuno">
+						<div class="img">
+							<div class="imagen21"></div>
+						</div>
+					</a>
+				</div>
+				<hr class="custom" />
+				<hr class="custom" />
+			<!-- veintiuno 21 -->
 			<div class="box">
 				<div class="texto">
 					<Entradas
 						href="/veinte"
 						titulo="Explorando el mundo de la computación cuántica"
-						fecha="09/10/24"
+						fecha="15/10/24"
 						autor="Andrea Zenteno"
 						descripcion="Imaginemos un mundo donde las computadoras pueden resolver problemas que hoy en día son considerados imposibles. Un mundo donde los medicamentos se diseñan en cuestión de días y donde la criptografía actual se vuelve obsoleta. Este futuro podría estar más cerca de lo que pensamos gracias a la computación cuántica."
 					/>
@@ -777,6 +796,15 @@ import DarkMode from "../components/DarkMode.astro";
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url("../assets/img/blog-20.jpg");
+		grid-area: 1 / 3 / 2 / 4;
+	}
+	.imagen21 {
+		width: 330px;
+		height: 330px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url("../assets/img/blog-21.jpg");
 		grid-area: 1 / 3 / 2 / 4;
 	}
 	.barra {
