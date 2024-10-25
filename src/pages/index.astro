@@ -32,6 +32,27 @@ import DarkMode from "../components/DarkMode.astro";
 				<div class="box">
 					<div class="texto">
 						<Entradas
+							href="/obsolescencia"
+							titulo="Condenados a la obsolescencia"
+							fecha="25/10/24"
+							autor="Andrea Zenteno"
+							descripcion="Imagina un mundo donde tu teléfono inteligente, apenas sacado de la caja, ya tiene fecha de caducidad. Suena como una película de ciencia ficción, pero la realidad es que la obsolescencia programada está más presente en nuestras vidas de lo que creemos. Desde los smartphones hasta los electrodomésticos, los productos están diseñados para fallar prematuramente, impulsándonos a un ciclo de consumo constante."
+						/>
+					</div>
+					<a href="/IA-blog">
+						<div class="img">
+							<div class="imagen23"></div>
+						</div>
+					</a>
+				</div>
+				<hr class="custom" />
+				<hr class="custom" />
+
+
+			<!-- blog 23  -->
+				<div class="box">
+					<div class="texto">
+						<Entradas
 							href="/IA-blog"
 							titulo="Generando el futuro: Un análisis de Gemini, ChatGPT y Meta IA"
 							fecha="21/10/24"
@@ -834,6 +855,15 @@ import DarkMode from "../components/DarkMode.astro";
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url("../assets/img/blog-22.jpg");
+		grid-area: 1 / 3 / 2 / 4;
+	}
+	.imagen23 {
+		width: 330px;
+		height: 330px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url("../assets/img/blog-23.jpg");
 		grid-area: 1 / 3 / 2 / 4;
 	}
 	.barra {
