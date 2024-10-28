@@ -29,6 +29,26 @@ import DarkMode from "../components/DarkMode.astro";
 		<main>
 			<!--<h1>BLOG <span class="text-gradient"> ECONOMIC SALES</span></h1> -->
 			<!-- <ul role="list" class="link-card-grid">-->
+
+			<div class="box">
+				<div class="texto">
+					<Entradas
+						href="/tablets"
+						titulo="Un recorrido histórico por el desarrollo de las tablets"
+						fecha="28/10/24"
+						autor="Mario Sanchez"
+						descripcion="Desde la visión utópica de Alan Kay hasta los potentes dispositivos que tenemos hoy en día, las tablets han recorrido un largo camino. En este artículo, exploraremos la fascinante historia de cómo estas pequeñas computadoras portátiles se convirtieron en una parte esencial de nuestra vida diaria. Desde los primeros prototipos hasta las últimas innovaciones, te mostraremos cómo la tecnología ha evolucionado para ofrecerte una experiencia cada vez más inmersiva y portátil."
+					/>
+				</div>
+				<a href="/tablets-blog">
+					<div class="img">
+						<div class="imagen24"></div>
+					</div>
+				</a>
+			</div>
+			<hr class="custom" />
+			<hr class="custom" />
+			<!-- blog 24 -->
 				<div class="box">
 					<div class="texto">
 						<Entradas
@@ -47,8 +67,6 @@ import DarkMode from "../components/DarkMode.astro";
 				</div>
 				<hr class="custom" />
 				<hr class="custom" />
-
-
 			<!-- blog 23  -->
 				<div class="box">
 					<div class="texto">
@@ -68,7 +86,6 @@ import DarkMode from "../components/DarkMode.astro";
 				</div>
 				<hr class="custom" />
 				<hr class="custom" />
-
 			<!-- 22 -->
 				<div class="box">
 					<div class="texto">
@@ -126,7 +143,6 @@ import DarkMode from "../components/DarkMode.astro";
 			</div>
 			<hr class="custom" />
 			<hr class="custom" />
-
 			<!-- diesinueve -->
 			<div class="box">
 				<div class="texto">
@@ -146,7 +162,6 @@ import DarkMode from "../components/DarkMode.astro";
 			</div>
 			<hr class="custom" />
 			<hr class="custom" />
-
 			<!-- diesiocho -->
 			<div class="box">
 				<div class="texto">
@@ -461,7 +476,6 @@ import DarkMode from "../components/DarkMode.astro";
 					<img src={Imagen1.src} />
 					<Image src={Imagen1} alt="cover" />
 					-->
-
 			<!-- <div class="box">
 				
 			<div class="texto">
@@ -820,7 +834,6 @@ import DarkMode from "../components/DarkMode.astro";
 		background-image: url("../assets/img/blog-18.jpg");
 		grid-area: 1 / 3 / 2 / 4;
 	}
-	
 	.imagen19 {
 		width: 330px;
 		height: 330px;
@@ -864,6 +877,15 @@ import DarkMode from "../components/DarkMode.astro";
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url("../assets/img/blog-23.jpg");
+		grid-area: 1 / 3 / 2 / 4;
+	}
+	.imagen24 {
+		width: 330px;
+		height: 330px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-image: url("../assets/img/blog-24.jpg");
 		grid-area: 1 / 3 / 2 / 4;
 	}
 	.barra {
