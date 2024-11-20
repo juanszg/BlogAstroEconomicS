@@ -1,0 +1,365 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NavFija from "../components/NavFija.astro";
+import Dropdown from "../components/Dropdown.astro";
+import Footer from "../components/Footer.astro";
+import DarkMode from "../components/DarkMode.astro";
+---
+
+<Layout title="Blog Economic Sales de Mexico">
+    <!-- MENU -->
+    <div class="barra">
+        <!--<img src="#">  -->
+    </div>
+    <div class="nav-fija">
+        <NavFija />
+    </div>
+    <div class="nav-pop">
+        <Dropdown />
+    </div>
+    <!-- MENU -->
+    <div class="boton-dark">
+        <DarkMode />
+    </div>
+    <body>
+        <div class="articulo">
+            <h1>
+                La verdad detrás de la red 5G: Separando los hechos de la
+                ficción
+            </h1>
+            <hr />
+            <h2>
+                La llegada de la <b>red 5G ha generado gran expectación</b>, pero
+                también una ola de rumores y miedos infundados. Desde supuestas
+                conexiones con enfermedades hasta conspiraciones globales, la <b>5G</b>
+                se ha convertido en el centro de muchas teorías conspirativas.
+                En este artículo, vamos a analizar los principales rumores sobre
+                </b>la red 5G</b> y a presentar los hechos científicos que los
+                desmienten.
+            </h2>
+            <div class="fecha">
+                <p>Por Andrea Zenteno - 19/Noviembre/24</p>
+            </div>
+            <div class="imagen imagen-1"></div>
+            <h3>
+                Dentro de los principales rumores que circulan sobre la red 5G,
+                tenemos 3 que destacan:
+            </h3>
+            <div class="remarcar">
+                <p>
+                   <b> o La red 5G causa enfermedades:</b> Uno de los rumores más
+                    persistentes es que la radiación de las antenas <b>5G</b> puede
+                    causar cáncer, <b>COVID-19</b> y otras enfermedades.
+                </p>
+            </div>
+            <div class="remarcar">
+                <p>
+                   <b> o La red 5G controla nuestras mentes:</b> Se ha especulado que
+                    la 5G puede ser utilizada para controlar a las personas a
+                    través de microchips implantados.
+                </p>
+            </div>
+            <div class="remarcar">
+                <p>
+                    <b>o La red 5G es parte de una conspiración global:</b> Algunas
+                    teorías sugieren que la implementación de la <b>5G</b> es parte de
+                    un plan para controlar a la población mundial.
+                </p>
+            </div>
+            <div class="imagen imagen-2"></div>
+            <p>
+                Ahora hablemos sobre la verdad de esta red. <b>La radiación emitida
+                por las antenas 5G es de baja frecuencia y no ionizante, lo que
+                significa que no tiene la energía suficiente para dañar el ADN</b> y
+                causar cáncer. Numerosos estudios científicos han demostrado que
+                no existe evidencia que vincule la exposición a la radiación de
+                las antenas <b>5G</b> con problemas de salud.
+            </p>
+            <p>
+                Por otra parte, la idea de que la <b>5G</b> pueda controlar nuestras
+                mentes es una completa fantasía sin ningún fundamento científico
+                y en el caso de las teorías conspirativas sobre la <b>5G</b>, la verdad
+                es que se carecen de pruebas para adjudicárselo a la red.
+            </p>
+            
+            <div class="imagen imagen-3"></div>
+            <p>
+                Hablemos ahora de los beneficios que conocemos que nos trae esta
+                red. La <b>5G</b> permitirá descargas más rápidas, menor latencia y una
+                mayor capacidad de conexión de dispositivos. <b>Además, será el
+                motor de nuevas tecnologías como la Internet de las Cosas, la
+                realidad virtual y los vehículos autónomos; y su implementación
+                generará nuevos empleos y estimulará el crecimiento económico</b>.
+            </p>
+            <h3>
+                La red 5G representa un gran avance tecnológico que tiene el
+                potencial de transformar nuestra sociedad. Sin embargo, la
+                desinformación y los rumores han generado miedo e incertidumbre
+                en la población. Es importante basar nuestras opiniones en
+                evidencia científica y no en teorías conspirativas. La red 5G no
+                representa ningún peligro para la salud y ofrece numerosos
+                beneficios para la sociedad.
+            </h3>
+            <hr />
+        </div>
+        <Footer />
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                background-image: url("../img/ruidoBackground.png");
+                background-color: gainsboro;
+            }
+            h1 {
+                text-shadow:
+                    1px 1px 0px rgb(32, 199, 255),
+                    1px -1px 0px rgb(47, 32, 255),
+                    -1px 1px 0px rgb(181, 32, 255);
+            }
+            .articulo {
+                margin: auto;
+                margin-top: 1em;
+                background-color: whitesmoke;
+                width: 75%;
+                padding: 2em;
+                border-radius: 0.5em;
+                line-height: auto;
+            }
+            .custom {
+                border: none; /* Elimina el borde predeterminado */
+                /*  border-top: 2px dashed #00c6cd;*/
+                border-top: 2px dashed #020077;
+            }
+            body.dark .custom {
+                border-top: 2px dashed #0031a5;
+            }
+            .grupoimg {
+                display: flex;
+                gap: 15px;
+                flex-flow: row;
+            }
+            /*  .remarcar {
+                background-image: url("../img/ruidoBackground.png");
+                background-color: lightskyblue;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 1em;
+                border-radius: 1em;
+                margin: 1em;
+            }*/
+            .imagen-1 {
+                width: 90%;
+                height: 380px;
+                background-image: url("../img/img-20/img-25/antenas2.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: auto;
+                border-radius: 1em;
+                background-color: #0031a5;
+            }
+            .imagen-2 {
+                width: 50%;
+                height: 350px;
+                background-image: url("../img/img-20/img-25/antenas.jpg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: auto;
+                transition: 0.3s ease-in-out;
+            }
+            .imagen-2:hover {
+                transform: scale(1.3);
+            }
+            .imagen-3 {
+                width: 95%;
+                height: 350px;
+                background-image: url("../img/img-20/img-25/telefonos.jpg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: auto;
+                border-radius: 1em;
+                transition: 0.3s ease-in-out;
+            }
+            .imagen-3:hover {
+                transform: scale(1.3);
+            }
+            .imagen-4 {
+                width: 95%;
+                height: 350px;
+                background-image: url("../img/img-20/img-23/tel2.jpg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin: auto;
+                border-radius: 1em;
+                transition: 0.3s ease-in-out;
+            }
+            .imagen-4:hover {
+                transform: scale(1.3);
+            }
+
+            .remarcar {
+                background-image: url("../img/ruidoBackground.png");
+                background-color: lightskyblue;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                padding: 1em;
+                border-radius: 1em;
+                margin: 0.5em;
+                box-shadow: 3px 3px 0 rgb(0, 3, 48);
+                text-shadow: 2px 2px 5px rgb(106, 161, 255);
+                text-align: center;
+            }
+            body.dark .remarcar {
+                background-color: rgb(0, 142, 94);
+                text-shadow: 2px 2px 5px rgb(9, 0, 24);
+            }
+            .flex {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+                align-content: flex-start;
+                width: 100%;
+                /*background-color: #26007d;*/
+                height: auto;
+                overflow: none;
+                flex-direction: row;
+                border-radius: 1em;
+            }
+            .flex div {
+                width: 450px;
+                height: auto;
+                margin: 20px;
+                background-color: rgb(173, 230, 192);
+                border-radius: 1em;
+                padding: 2em;
+                transition: transform 0.2s ease;
+                background-image: url("../img/ruidoBackground.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                cursor: crosshair;
+            }
+
+            .flex div:hover {
+                transform: scale(1.1);
+                background-color: rgb(77, 225, 126);
+            }
+            body.dark .flex div {
+                background-color: rgb(50, 0, 188);
+                color: whitesmoke;
+            }
+            body.dark .articulo {
+                background-color: rgb(12, 0, 78);
+                /*background-image: url("../img/ruidoBackground.png");*/
+            }
+            .fecha {
+                display: flex;
+                flex-flow: row-reverse;
+                flex-direction: end;
+            }
+            body.dark .fecha p {
+                color: rgb(161, 161, 161);
+            }
+            p {
+                font-weight: 500;
+                line-height: 1.6em;
+                color: rgb(40, 40, 40);
+            }
+            body.dark p {
+                color: gainsboro;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+            body.dark h3 {
+                font-weight: 900;
+                font-size: 1.5em;
+            }
+            h4 {
+                font-weight: 900;
+                font-size: 1.3em;
+            }
+            body.dark h4 {
+                /*color: rgb(56, 166, 255);*/
+                color: rgb(74, 174, 255);
+            }
+            body.dark h2 {
+                color: gainsboro;
+            }
+            body.dark h1 {
+                color: gainsboro;
+            }
+            body.dark b {
+                /*color: rgb(168, 254, 225);*/
+                /*color: aqua;*/
+                color: rgb(140, 234, 255);
+            }
+            /*  .imagen {
+                width: 100%;
+                height: 370px;
+                /*background-color: rgb(51, 51, 51);
+            }
+            body.dark .imagen {
+                /* background-color: rgb(240, 240, 240);
+            }*/
+            h3 {
+                color: darkblue;
+            }
+            body.dark h3 {
+                color: rgb(0, 208, 255);
+            }
+            /* MENU --------------------------------------*/
+
+            .barra {
+                display: none;
+                width: 100%;
+                /*background-color: rgb(0, 0, 175);*/
+                background-color: gainsboro;
+                height: 160px;
+                text-align: center;
+                padding-top: 1em;
+                background-image: url("../img/Logo_ES_Post.png");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            /*.barra img {
+        max-width: 95%;
+        height: 200px;
+    }*/
+            .nav-pop {
+                visibility: hidden;
+            }
+            @media (max-width: 750px) {
+                .nav-fija {
+                    display: none;
+                }
+                .nav-pop {
+                    visibility: visible;
+                    width: 100%;
+                    background-color: rgba(0, 58, 159, 0.567);
+                }
+                .navs {
+                    visibility: visible;
+                }
+                .barra {
+                    display: block;
+                }
+            }
+            @media (max-width: 500px) {
+                .imagen {
+                    width: 100%;
+                }
+                .remarcar {
+                    width: 90%;
+                    font-size: 0.85em;
+                }
+            }
+        </style>
+    </body></Layout
+>
